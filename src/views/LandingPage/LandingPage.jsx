@@ -46,8 +46,8 @@ class LandingPage extends React.Component {
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Your beautiful blockchain database</h1>
-                <h4>
-                A public repository featuring 11293 electron tomography datasets of intact bacterial and archaeal cells, representing 85 species.
+                <h4 className={classes.subtitle}>
+                Welcome to the new way to store and share inforamtion and data. Create your own blockchain-based Web 3.0 database of whatever you like.
                 </h4>
                 <br />
                 <Button

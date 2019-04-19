@@ -50,7 +50,11 @@ class Components extends React.Component {
                   A public repository featuring 11293 electron tomography datasets of intact bacterial and archaeal cells, representing 85 species. 
                   </h4>
                   <br />
-                  <Button color="danger" size="lg">
+                  <Button 
+                  color="info" 
+                  size="lg"
+                  href="/profile-page"
+                  >
                   Start Searching
                 </Button>
                 </div>
@@ -61,8 +65,7 @@ class Components extends React.Component {
 
         <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionPills />
-        <SectionBasics />
-          <SectionTabs />
+
   
 
         </div>

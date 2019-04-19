@@ -10,7 +10,9 @@ const pillsStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none"
-  }
+  },
+
+ 
 };
 
 export default pillsStyle;
