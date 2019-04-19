@@ -20,7 +20,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 // Sections for this page
 
 import WorkSection from "./Sections/WorkSection.jsx";
-import SectionPills from "/Users/Prudence/repos/material-kit-react-master/src/views/Components/Sections/SectionPills.jsx";
+import SectionPills from "/Users/Prudence/repos/ddx-react-prl/src/views/Components/Sections/SectionPills.jsx";
 
 const dashboardRoutes = [];
 
