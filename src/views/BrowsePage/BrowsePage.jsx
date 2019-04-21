@@ -14,16 +14,16 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
-
 import browsePageStyle from "assets/jss/material-kit-react/views/browsePage.jsx";
+
 
 // Sections for this page
 
-import WorkSection from "./Sections/WorkSection.jsx.js";
+import SectionPills from "/Users/Prudence/repos/ddx-react-prl/src/views/Components/Sections/SectionPills.jsx";
 
 const dashboardRoutes = [];
 
-class LandingPage extends React.Component {
+class BrowsePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
@@ -40,20 +40,19 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/ddxbg.jpg")}>
+        <Parallax filter image={require("assets/img/roverbg.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Your beautiful blockchain database</h1>
-                <h4>
-                A public repository featuring 11293 electron tomography datasets of intact bacterial and archaeal cells, representing 85 species.
+                <h4 className={classes.subtitle}>
+                Welcome to the new way to store and share inforamtion and data. Create your own blockchain-based Web 3.0 database of whatever you like.
                 </h4>
                 <br />
                 <Button
                   color="danger"
                   size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
+                  href="/profile-page"
                   rel="noopener noreferrer"
                 >
                   Browse Database
@@ -62,9 +61,11 @@ class LandingPage extends React.Component {
             </GridContainer>
           </div>
         </Parallax>
+
+
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <WorkSection />
+            <SectionPills />
           </div>
         </div>
         <Footer />

@@ -13,23 +13,15 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
-import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 import SectionExamples from "../Components/Sections/SectionExamples";
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 
 class ProfilePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
-    const imageClasses = classNames(
-      classes.imgRaised,
-      classes.imgRoundedCircle,
-      classes.imgFluid
-    );
-    const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+
 
     
     return (

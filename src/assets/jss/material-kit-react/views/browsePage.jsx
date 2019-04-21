@@ -1,6 +1,6 @@
 import { container, title } from "assets/jss/material-kit-react.jsx";
 
-const BrowsePageStyle = {
+const browsePageStyle = {
   container: {
     zIndex: "12",
     color: "#FFFFFF",

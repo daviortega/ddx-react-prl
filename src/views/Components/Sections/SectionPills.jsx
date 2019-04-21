@@ -8,25 +8,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import pillsStyle from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.jsx";
 import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Paginations from "components/Pagination/Pagination.jsx";
+import SectionCard from "/Users/Prudence/repos/ddx-react-prl/src/views/Components/Sections/SectionCard.jsx"
 
 
-
-const styles = {
-    card: {
-      maxWidth: 345,
-    },
-    media: {
-      // ⚠️ object-fit is not supported by IE 11.
-      objectFit: 'cover',
-    },
-  };
   
   
 class SectionPills extends React.Component {
@@ -44,224 +28,35 @@ class SectionPills extends React.Component {
        
        
         <Grid item xs={6} sm={3}>
-        <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Record Image"
-          className={classes.media}
-          height="200"
-          image="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-            <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
-
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          View
-        </Button>
-      </CardActions>
-    </Card>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-        <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Record Image"
-          className={classes.media}
-          height="200"
-          image="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-            <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
-
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          View
-        </Button>
-      </CardActions>
-    </Card>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-        <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Record Image"
-          className={classes.media}
-          height="200"
-          image="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-            <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
-
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          View
-        </Button>
-      </CardActions>
-    </Card>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-        <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Record Image"
-          className={classes.media}
-          height="200"
-          image="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-            <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
-
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          View
-        </Button>
-      </CardActions>
-    </Card>
+        <SectionCard />
         </Grid>
 
         <Grid item xs={6} sm={3}>
-        <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Record Image"
-          className={classes.media}
-          height="200"
-          image="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-            <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
+        <SectionCard />
+        </Grid>
 
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          View
-        </Button>
-      </CardActions>
-    </Card>
+        <Grid item xs={6} sm={3}>
+        <SectionCard />
+        </Grid>
+
+        <Grid item xs={6} sm={3}>
+        <SectionCard />
+        </Grid>
+
+        <Grid item xs={6} sm={3}>
+        <SectionCard />
         </Grid>
        
         <Grid item xs={6} sm={3}>
-        <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Record Image"
-          className={classes.media}
-          height="200"
-          image="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-            <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
-
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          View
-        </Button>
-      </CardActions>
-    </Card>
+        <SectionCard />
         </Grid>
-       
+
         <Grid item xs={6} sm={3}>
-        <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Record Image"
-          className={classes.media}
-          height="200"
-          image="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-            <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
-
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          View
-        </Button>
-      </CardActions>
-    </Card>
+        <SectionCard />
         </Grid>
 
-         <Grid item xs={6} sm={3}>
-        <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Record Image"
-          className={classes.media}
-          height="200"
-          image="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-            <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
-
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          View
-        </Button>
-      </CardActions>
-    </Card>
+        <Grid item xs={6} sm={3}>
+        <SectionCard />
         </Grid>
 
       </Grid>
@@ -269,18 +64,6 @@ class SectionPills extends React.Component {
 
 
 
-                <Paginations
-                  pages={[
-                    { text: "PREV" },
-                    { text: 1 },
-                    { text: 2 },
-                    { active: true, text: 3 },
-                    { text: 4 },
-                    { text: 5 },
-                    { text: "NEXT" }
-                  ]}
-                  color="danger"
-                />
         
           </div>
         </div>

@@ -10,6 +10,7 @@ import Components from "views/Components/Components.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
+import BrowsePage from "views/BrowsePage/BrowsePage.jsx";
 
 
 var hist = createBrowserHistory();
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Route path="/components" component={Components} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} />
+      <Route path="/browse" component={BrowsePage} />
 
 
       <Route path="/" component={LandingPage} />
