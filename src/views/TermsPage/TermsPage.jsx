@@ -13,17 +13,16 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
-import aboutPageStyle from "assets/jss/material-kit-react/views/aboutPage.jsx";
+import TermsPageStyle from "assets/jss/material-kit-react/views/termsPage.jsx";
 
-// Sections for this page
-import SectionFaq from "./SectionFaq";
+
 
 
 const dashboardRoutes = [];
 
 
 
-class AboutPage extends React.Component {
+class TermsPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
@@ -45,10 +44,8 @@ class AboutPage extends React.Component {
           <div className={classes.container}>
             <GridContainer className={classes.aboutmain}>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>About</h1>
-                <h4 className={classes.subtitle}>
-                Welcome to the Caltech ETDB, the blockchain-based Web 3.0 database of thousands of electron tomograms.                </h4>
-                <br />
+                <h1 className={classes.title}>Terms & Conditions</h1>
+                                <br />
 
               </GridItem>
             </GridContainer>
@@ -67,7 +64,6 @@ class AboutPage extends React.Component {
 
 <h2>FAQ</h2>
 
-<SectionFaq />
 
           </div>
         </div>
@@ -77,4 +73,4 @@ class AboutPage extends React.Component {
   }
 }
 
-export default withStyles(aboutPageStyle)(AboutPage);
+export default withStyles(termsPageStyle)(TermsPage);

@@ -16,8 +16,8 @@ const profilePageStyle = {
 
   searchheader: {
     maxHeight: "500px",
-
   },
+  
   name: {
     marginTop: "-80px"
   },
