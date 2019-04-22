@@ -11,11 +11,12 @@ const styles = theme => ({
     display: 'flex',
     flexWrap: 'wrap',
   },
-  textField: {
+  textFieldsort: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
-    width: 200,
-  },
+    width: '200px',
+ },
+
   dense: {
     marginTop: 19,
   },
@@ -67,7 +68,7 @@ class TextFields extends React.Component {
           id="standard-select-currency"
           select
           label="Sort results by:"
-          className={classes.textField}
+          className={classes.textFieldsort}
           value={this.state.currency}
           onChange={this.handleChange('currency')}
           SelectProps={{

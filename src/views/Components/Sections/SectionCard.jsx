@@ -20,7 +20,7 @@ class SectionCard extends React.Component {
     return (
      
             <Card className={classes.card}
-            href="/login-page">
+            href="/record">
       <CardActionArea>
         <CardMedia
           component="img"
@@ -40,7 +40,7 @@ class SectionCard extends React.Component {
         <Button size="small" color="primary">
           Share
         </Button>
-        <Button size="small" color="primary" href="/login-page"
+        <Button size="small" color="primary" href="/record"
 >
           View
         </Button>

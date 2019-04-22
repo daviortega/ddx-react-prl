@@ -38,9 +38,9 @@ class ProfilePage extends React.Component {
           {...rest}
         /> 
         
-        <Parallax>
+        <Parallax className={classes.searchheader}>
         <div className={classes.container}>
-
+<h3>What are you looking for?</h3>
         <Grid container justify = "center">
         <TextField
           id="filled-full-width"
@@ -74,12 +74,7 @@ class ProfilePage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.browse}>
             <div className={classes.container}>
-           
-   
-
             <SectionExamples />
-
-
             </div>
           </div>
         </div>

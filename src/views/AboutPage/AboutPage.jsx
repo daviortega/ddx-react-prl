@@ -19,12 +19,11 @@ import aboutPageStyle from "assets/jss/material-kit-react/views/aboutPage.jsx";
 
 // Sections for this page
 
-import WorkSection from "./Sections/WorkSection.jsx.js";
 import SectionPills from "/Users/Prudence/repos/ddx-react-prl/src/views/Components/Sections/SectionPills.jsx";
 
 const dashboardRoutes = [];
 
-class BrowsePage extends React.Component {
+class AboutPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
@@ -45,7 +44,7 @@ class BrowsePage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Your beautiful blockchain database</h1>
+                <h1 className={classes.title}>About</h1>
                 <h4 className={classes.subtitle}>
                 Welcome to the new way to store and share inforamtion and data. Create your own blockchain-based Web 3.0 database of whatever you like.
                 </h4>
@@ -66,9 +65,7 @@ class BrowsePage extends React.Component {
 
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <SectionPills />
 
-            <WorkSection />
           </div>
         </div>
         <Footer />
