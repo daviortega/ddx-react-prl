@@ -29,18 +29,16 @@ function Footer({ ...props }) {
        
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/presentation"
+                href="/about"
                 className={classes.block}
-                target="_blank"
               >
                 About
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="http://blog.creative-tim.com/"
+                href="/about"
                 className={classes.block}
-                target="_blank"
               >
                 Contact
               </a>

@@ -11,7 +11,6 @@ import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import aboutPageStyle from "assets/jss/material-kit-react/views/aboutPage.jsx";
@@ -40,23 +39,16 @@ class AboutPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/roverbg.jpg")}>
+        <Parallax className={classes.about} 
+        filter image={require("assets/img/roverbg.jpg")}>
           <div className={classes.container}>
-            <GridContainer>
+            <GridContainer className={classes.aboutmain}>
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>About</h1>
                 <h4 className={classes.subtitle}>
-                Welcome to the new way to store and share inforamtion and data. Create your own blockchain-based Web 3.0 database of whatever you like.
-                </h4>
+                Welcome to the Caltech ETDB, the blockchain-based Web 3.0 database of thousands of electron tomograms.                </h4>
                 <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="/profile-page"
-                  rel="noopener noreferrer"
-                >
-                  Browse Database
-                </Button>
+
               </GridItem>
             </GridContainer>
           </div>
@@ -65,7 +57,10 @@ class AboutPage extends React.Component {
 
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
+<h2>About Electron tomography</h2>
+Electron tomography is a form of transmission electron microscopy in which a sample is tilted during imaging, typically one or two degrees between images, building up a "tilt-series" of images that can be computationally reconstructed into a 3D view of the sample, or "tomogram." In essence, electron tomography takes a CT scan of a cell.
 
+Currently, the majority of tomograms in the ETDB were acquired by cryo-EM, in which cells in standard growth media are plunged into a cryogen that freezes them so rapidly that the water molecules don't have a chance to rearrange into a crystalline lattice, preserving cell structures in vitreous, or glass-like, amorphous ice. Vitrified cells can be imaged directly by electron tomography, without the need for fixation, dehydration, resin-embedding or staining. This captures the cells in an essentially native state.
           </div>
         </div>
         <Footer />

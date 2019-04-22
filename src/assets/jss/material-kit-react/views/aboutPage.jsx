@@ -3,7 +3,6 @@ import { container, title } from "assets/jss/material-kit-react.jsx";
 const aboutPageStyle = {
   container: {
     zIndex: "12",
-    color: "#FFFFFF",
     ...container
   },
   title: {
@@ -18,7 +17,9 @@ const aboutPageStyle = {
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
-    margin: "10px auto 0"
+    margin: "10px 0 0",
+    color: "#FFFFFF",
+
   },
   main: {
     background: "#FFFFFF",

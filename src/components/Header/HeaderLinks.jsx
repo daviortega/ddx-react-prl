@@ -28,7 +28,7 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <Button
           variant="outlined" 
-          href="/login-page"
+          href="/add-record"
           color="danger"
             size="sm"
           className={classes.button}
