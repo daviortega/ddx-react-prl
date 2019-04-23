@@ -15,9 +15,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import recordPageStyle from "assets/jss/material-kit-react/views/recordPage.jsx";
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import SectionCarousel from '/Users/Prudence/repos/ddx-react-prl/src/views/Components/Sections/SectionCarousel.jsx'
 const dashboardRoutes = [];
 
 
@@ -58,7 +56,7 @@ class RecordPage extends React.Component {
           <Grid container spacing={24}>
 
         <Grid item xs={6}>
-          <img className={classes.recordimage} src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg"></img>
+          <img className={classes.recordimage} src="https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpg" alt="placeholder"></img>
         </Grid>
         <Grid item xs={6}>
          <p><label className={classes.metalabel}>Tilt Series date:</label> February 14th 2014</p> 
@@ -89,7 +87,6 @@ class RecordPage extends React.Component {
                 </Button>
         </Grid>
 
-<SectionCarousel></SectionCarousel>
       </Grid>
          
           </div>

@@ -19,7 +19,7 @@ import browsePageStyle from "assets/jss/material-kit-react/views/browsePage.jsx"
 
 // Sections for this page
 
-import SectionPills from "/Users/Prudence/repos/ddx-react-prl/src/views/Components/Sections/SectionPills.jsx";
+import SectionBrowsegrid from "../ProfilePage/Sections/SectionBrowsegrid";
 
 const dashboardRoutes = [];
 
@@ -64,8 +64,8 @@ class BrowsePage extends React.Component {
 
 
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <div className={classes.container}>
-            <SectionPills />
+          <div className={classes.container}>hi
+            <SectionBrowsegrid />
           </div>
         </div>
         <Footer />

@@ -15,8 +15,8 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import TextField from '@material-ui/core/TextField';
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
-import SectionExamples from "../Components/Sections/SectionExamples";
 import Grid from '@material-ui/core/Grid';
+import SectionBrowsegrid from "./Sections/SectionBrowsegrid";
 
 class ProfilePage extends React.Component {
   render() {
@@ -74,8 +74,7 @@ class ProfilePage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.browse}>
             <div className={classes.container}>
-            <SectionExamples />
-            </div>
+<SectionBrowsegrid></SectionBrowsegrid>            </div>
           </div>
         </div>
         <Footer />
