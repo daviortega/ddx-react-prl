@@ -17,6 +17,7 @@ import TextField from '@material-ui/core/TextField';
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 import Grid from '@material-ui/core/Grid';
 import SectionBrowsegrid from "./Sections/SectionBrowsegrid";
+import SectionAdvancedsearch from "./Sections/SectionAdvancedsearch";
 
 class ProfilePage extends React.Component {
   render() {
@@ -56,9 +57,7 @@ class ProfilePage extends React.Component {
         />
                
                 <br />
-                <Button color="default" simple>
-                  Advanced Search
-                </Button>  </Grid>
+<SectionAdvancedsearch></SectionAdvancedsearch> </Grid>
 
           <GridContainer>
             <GridItem>
