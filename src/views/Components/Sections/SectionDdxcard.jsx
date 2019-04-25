@@ -56,7 +56,7 @@ class SectionDdxcard extends React.Component {
         />
         <CardContent>
             <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
+            <p className="nomargin">Record Meta</p>
 
         </CardContent>
       </CardActionArea>
