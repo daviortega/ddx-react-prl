@@ -12,8 +12,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 
-  
-  
+
+
 class SectionCard extends React.Component {
   render() {
     const { classes } = this.props;
@@ -32,7 +32,7 @@ class SectionCard extends React.Component {
         />
         <CardContent>
             <h4>Record Title</h4>
-            <p class="nomargin">Record Meta</p>
+            <p className="nomargin">Record Meta</p>
 
         </CardContent>
       </CardActionArea>
