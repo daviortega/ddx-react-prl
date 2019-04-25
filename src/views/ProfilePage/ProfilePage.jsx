@@ -10,7 +10,6 @@ import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import TextField from '@material-ui/core/TextField';
@@ -41,7 +40,7 @@ class ProfilePage extends React.Component {
         
         <Parallax className={classes.searchheader}>
         <div className={classes.container}>
-<h3>What are you looking for?</h3>
+<h3 className={classes.searchh3}>What are you looking for?</h3>
         <Grid container justify = "center">
         <TextField
           id="filled-full-width"

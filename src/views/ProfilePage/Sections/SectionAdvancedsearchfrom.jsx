@@ -25,20 +25,36 @@ const styles = theme => ({
 
 const currencies = [
   {
-    value: 'USD',
-    label: '$',
+    value: 'All fields',
+    label: 'All fields',
   },
   {
-    value: 'EUR',
-    label: '€',
+    value: 'Species',
+    label: 'Species',
   },
   {
-    value: 'BTC',
-    label: '฿',
+    value: 'Strain',
+    label: 'Strain',
   },
   {
-    value: 'JPY',
-    label: '¥',
+    value: 'Institution',
+    label: 'Institution',
+  },
+  {
+    value: 'Lab',
+    label: 'Lab',
+  },
+  {
+    value: 'Date',
+    label: 'Date',
+  },
+  {
+    value: 'Scope Name',
+    label: 'Scope Name',
+  },
+  {
+    value: 'Magnification',
+    label: 'Magnification',
   },
 ];
 
@@ -59,7 +75,40 @@ class TextFields extends React.Component {
 
     return (
       <form className={classes.containerform} noValidate autoComplete="off">
+               <TextField
+          id="standard-select-currency"
+          select
+          label="Search Field"
+          className={classes.textField}
+          value={this.state.currency}
+          onChange={this.handleChange('currency')}
+          SelectProps={{
+            MenuProps: {
+              className: classes.menu,
+            },
+          }}
+          margin="normal"
+        >
+          {currencies.map(option => (
+            <MenuItem key={option.value} value={option.value}>
+              {option.label}
+            </MenuItem>
+          ))}
+        </TextField>
+       
         <TextField
+          id="standard-full-width"
+          label="Label"
+          style={{ margin: 8 }}
+          placeholder="Placeholder"
+          helperText="Full width!"
+          fullWidth
+          margin="normal"
+          InputLabelProps={{
+            shrink: true,
+          }}
+        />
+         <TextField
           id="standard-name"
           label="Name"
           className={classes.textField}
@@ -198,61 +247,7 @@ class TextFields extends React.Component {
           margin="normal"
         />
 
-        <TextField
-          id="standard-select-currency"
-          select
-          label="Select"
-          className={classes.textField}
-          value={this.state.currency}
-          onChange={this.handleChange('currency')}
-          SelectProps={{
-            MenuProps: {
-              className: classes.menu,
-            },
-          }}
-          helperText="Please select your currency"
-          margin="normal"
-        >
-          {currencies.map(option => (
-            <MenuItem key={option.value} value={option.value}>
-              {option.label}
-            </MenuItem>
-          ))}
-        </TextField>
-        <TextField
-          id="standard-select-currency-native"
-          select
-          label="Native select"
-          className={classes.textField}
-          value={this.state.currency}
-          onChange={this.handleChange('currency')}
-          SelectProps={{
-            native: true,
-            MenuProps: {
-              className: classes.menu,
-            },
-          }}
-          helperText="Please select your currency"
-          margin="normal"
-        >
-          {currencies.map(option => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </TextField>
-        <TextField
-          id="standard-full-width"
-          label="Label"
-          style={{ margin: 8 }}
-          placeholder="Placeholder"
-          helperText="Full width!"
-          fullWidth
-          margin="normal"
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
+
 
         <TextField
           id="standard-bare"
