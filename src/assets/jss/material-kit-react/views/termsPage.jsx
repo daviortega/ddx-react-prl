@@ -1,6 +1,6 @@
 import { container, title } from "assets/jss/material-kit-react.jsx";
 
-const termsPageStyle = {
+const TermsPageStyle = {
   container: {
     zIndex: "12",
     ...container
@@ -46,4 +46,4 @@ const termsPageStyle = {
   }
 };
 
-export default termsPageStyle;
+export default TermsPageStyle;

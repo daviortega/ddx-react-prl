@@ -7,7 +7,6 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import "assets/scss/material-kit-react.scss?v=1.4.0";
 
 // pages for this product
-import Components from "views/Components/Components.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
@@ -16,6 +15,7 @@ import AboutPage from "views/AboutPage/AboutPage.jsx";
 import RecordPage from "views/RecordPage/RecordPage.jsx";
 
 import { red, indigo, pink } from "@material-ui/core/colors";
+import TermsPage from "./views/TermsPage/TermsPage";
 
 var hist = createBrowserHistory();
 // All the following keys are optional.
@@ -39,13 +39,13 @@ ReactDOM.render(
   <Router history={hist}>
     <MuiThemeProvider theme={theme}>
       <Switch>
-        <Route path="/components" component={Components} />
         <Route path="/profile-page" component={ProfilePage} />
         <Route path="/add-record" component={LoginPage} />
         <Route path="/browse" component={BrowsePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/record" component={RecordPage} />
-        
+        <Route path="/terms" component={TermsPage} />
+
         <Route path="/" component={LandingPage} />
       </Switch>
     </MuiThemeProvider>

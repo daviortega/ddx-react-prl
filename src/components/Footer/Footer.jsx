@@ -45,9 +45,8 @@ function Footer({ ...props }) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/license"
+                href="/terms"
                 className={classes.block}
-                target="_blank"
               >
                 Terms & Conditions
               </a>

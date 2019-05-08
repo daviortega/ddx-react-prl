@@ -40,8 +40,8 @@ class TermsPage extends React.Component {
           {...rest}
         />
         <Parallax className={classes.aboutheader} 
-        filter image={require("assets/img/roverbg.jpg")}>
-          <div className={classes.container}>
+        filter image={require("assets/img/short-background-placeholder.jpg")}>
+        <div className={classes.container}>
             <GridContainer className={classes.aboutmain}>
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Terms & Conditions</h1>
@@ -57,12 +57,15 @@ class TermsPage extends React.Component {
           <div className={classes.container}>
 
           
-<h2>Electron tomography</h2>
-<p className={classes.aboutp}>Electron tomography is a form of transmission electron microscopy in which a sample is tilted during imaging, typically one or two degrees between images, building up a "tilt-series" of images that can be computationally reconstructed into a 3D view of the sample, or "tomogram." In essence, electron tomography takes a CT scan of a cell.</p>
+          <p>These images and data have been provided free to the public in hopes of advancing science. All parties are free to use them for research purposes without restriction.</p>
 
-<p className={classes.aboutp}>Currently, the majority of tomograms in the ETDB were acquired by cryo-EM, in which cells in standard growth media are plunged into a cryogen that freezes them so rapidly that the water molecules don't have a chance to rearrange into a crystalline lattice, preserving cell structures in vitreous, or glass-like, amorphous ice. Vitrified cells can be imaged directly by electron tomography, without the need for fixation, dehydration, resin-embedding or staining. This captures the cells in an essentially native state.</p>
+          <p>Publications benefiting from the data should reference Ortega et al. (in preparation). Users may also choose to directly acknowledge the individual, individuals, lab, or institution who collected particular images as well.</p>
 
-<h2>FAQ</h2>
+          <p>If any party wishes to use the images or data for commercial purposes, please contact Prof. Grant Jensen at jensen(at)caltech.edu. The California Institute of Technology (Caltech) claims copyright to the data and images contained herein under Creative Commons License.</p>
+
+          <p>Images and data are provided “as is,” with no warranties of any kind, including that the use of the images and data infringe any third party intellectual property rights. Note some representations of a small fraction of the data have been published in scientific journals. Some of these journals claim copyright on those particular representations that were shown in the paper as figures, but it is highly unlikely that any new representation would exactly match that already copyrighted.</p>
+
+          <p>Also note that the metadata, including pixel size and electron dosage, of individual tomograms may be incorrect. If these measurements affect your use of the data, please contact us to verify their accuracy.</p>
 
 
           </div>
@@ -73,4 +76,4 @@ class TermsPage extends React.Component {
   }
 }
 
-export default withStyles(termsPageStyle)(TermsPage);
+export default withStyles(TermsPageStyle)(TermsPage);

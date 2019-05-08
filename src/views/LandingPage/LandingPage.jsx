@@ -21,6 +21,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 
 import WorkSection from "./Sections/WorkSection.jsx";
 import NewestSection from "./Sections/NewestSection.jsx";
+import AboutTextLeft from "./Sections/AboutTextLeft.jsx";
 
 const dashboardRoutes = [];
 
@@ -41,7 +42,7 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/roverbg.jpg")}>
+        <Parallax filter image={require("assets/img/BG-hero-placeholder.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
@@ -67,6 +68,8 @@ class LandingPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
 <NewestSection></NewestSection>
+<AboutTextLeft></AboutTextLeft>
+
             <WorkSection />
           </div>
         </div>

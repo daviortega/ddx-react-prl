@@ -17,6 +17,9 @@ import aboutPageStyle from "assets/jss/material-kit-react/views/aboutPage.jsx";
 
 // Sections for this page
 import SectionFaq from "./SectionFaq";
+import AboutTextLeft from "./Sections/AboutTextLeft";
+import AboutTextRight from "./Sections/AboutTextRight";
+import AboutTextFullwidth from "./Sections/AboutTextFullwidth";
 
 
 const dashboardRoutes = [];
@@ -41,7 +44,7 @@ class AboutPage extends React.Component {
           {...rest}
         />
         <Parallax className={classes.aboutheader} 
-        filter image={require("assets/img/roverbg.jpg")}>
+        filter image={require("assets/img/short-background-placeholder.jpg")}>
           <div className={classes.container}>
             <GridContainer className={classes.aboutmain}>
               <GridItem xs={12} sm={12} md={6}>
@@ -60,11 +63,11 @@ class AboutPage extends React.Component {
           <div className={classes.container}>
 
           
-<h2>Electron tomography</h2>
-<p className={classes.aboutp}>Electron tomography is a form of transmission electron microscopy in which a sample is tilted during imaging, typically one or two degrees between images, building up a "tilt-series" of images that can be computationally reconstructed into a 3D view of the sample, or "tomogram." In essence, electron tomography takes a CT scan of a cell.</p>
 
-<p className={classes.aboutp}>Currently, the majority of tomograms in the ETDB were acquired by cryo-EM, in which cells in standard growth media are plunged into a cryogen that freezes them so rapidly that the water molecules don't have a chance to rearrange into a crystalline lattice, preserving cell structures in vitreous, or glass-like, amorphous ice. Vitrified cells can be imaged directly by electron tomography, without the need for fixation, dehydration, resin-embedding or staining. This captures the cells in an essentially native state.</p>
-
+<AboutTextFullwidth></AboutTextFullwidth>
+<AboutTextLeft></AboutTextLeft>
+<AboutTextFullwidth></AboutTextFullwidth>
+<AboutTextRight></AboutTextRight>
 <h2>FAQ</h2>
 
 <SectionFaq />
