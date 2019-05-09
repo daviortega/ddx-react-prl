@@ -55,7 +55,7 @@ function FullWidthGrid(props) {
        </Grid>
         <Grid item xs={12} sm={6}>
         <img
-                  src={"/img/editorial-image-placeholder.jpg"
+                  src={"https://countrylakesdental.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.jpgh"
                 }
                   alt="..."
                   className={classes.imgabout}

@@ -56,7 +56,8 @@ class ProfilePage extends React.Component {
         />
                
                 <br />
-<SectionAdvancedsearch></SectionAdvancedsearch> </Grid>
+<SectionAdvancedsearch></SectionAdvancedsearch> 
+ </Grid>
 
           <GridContainer>
             <GridItem>

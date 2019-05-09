@@ -16,7 +16,7 @@ const profilePageStyle = {
 
   searchheader: {
     maxHeight: "500px",
-    background: "#2b2b2b"
+    background: "#e0e0e0"
   },
   
   name: {
@@ -59,9 +59,9 @@ const profilePageStyle = {
   },
 
   searchh3: {
-    color: "#fff",
+    color: "#000",
     textAlign: "center",
-    fontSize: "50px",
+    fontSize: "40px",
   },
 };
 

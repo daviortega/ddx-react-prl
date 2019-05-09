@@ -28,83 +28,83 @@ class SectionPills extends React.Component {
 
       <Grid container spacing={24}>
        
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
        
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={6} md={3}>
         <SectionCard />
         </Grid>
 
