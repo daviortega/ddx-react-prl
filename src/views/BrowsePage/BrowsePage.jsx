@@ -16,10 +16,11 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import browsePageStyle from "assets/jss/material-kit-react/views/browsePage.jsx";
 
-
 // Sections for this page
 
 import SectionBrowsegrid from "../ProfilePage/Sections/SectionBrowsegrid";
+
+import { config } from "ddx.config.js";
 
 const dashboardRoutes = [];
 
@@ -31,7 +32,7 @@ class BrowsePage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="DDX Template"
+          brand={config.projectName}
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -44,9 +45,11 @@ class BrowsePage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Your beautiful blockchain database</h1>
+                <h1 className={classes.title}>{config.projectName}</h1>
                 <h4 className={classes.subtitle}>
-                Welcome to the new way to store and share inforamtion and data. Create your own blockchain-based Web 3.0 database of whatever you like.
+                  Welcome to the new way to store and share information and
+                  data. Create your own blockchain-based Web 3.0 database of
+                  whatever you like.
                 </h4>
                 <br />
                 <Button
@@ -62,9 +65,9 @@ class BrowsePage extends React.Component {
           </div>
         </Parallax>
 
-
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <div className={classes.container}>hi
+          <div className={classes.container}>
+            hi
             <SectionBrowsegrid />
           </div>
         </div>

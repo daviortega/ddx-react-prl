@@ -2,7 +2,7 @@ import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles"
+import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
 
@@ -22,6 +22,8 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import WorkSection from "./Sections/WorkSection.jsx";
 import NewestSection from "./Sections/NewestSection.jsx";
 import AboutTextLeft from "./Sections/AboutTextLeft.jsx";
+
+import { config } from "ddx.config.js";
 
 const dashboardRoutes = [];
 
@@ -46,14 +48,12 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Your beautiful blockchain database</h1>
-                <h4 className={classes.subtitle}>
-                Welcome to the new way to store and share inforamtion and data. Create your own blockchain-based Web 3.0 database of whatever you like.
-                </h4>
+                <h1 className={classes.title}>{config.title}</h1>
+                <h4 className={classes.subtitle}>{config.subtitle}</h4>
                 <br />
                 <Button
                   color="danger"
-                  size="lg"
+                  size="md"
                   href="/profile-page"
                   rel="noopener noreferrer"
                 >
@@ -64,11 +64,10 @@ class LandingPage extends React.Component {
           </div>
         </Parallax>
 
-
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-<NewestSection></NewestSection>
-<AboutTextLeft></AboutTextLeft>
+            <NewestSection></NewestSection>
+            <AboutTextLeft></AboutTextLeft>
 
             <WorkSection />
           </div>
@@ -79,4 +78,4 @@ class LandingPage extends React.Component {
   }
 }
 
-export default withStyles(landingPageStyle, {withTheme: true})(LandingPage);
+export default withStyles(landingPageStyle, { withTheme: true })(LandingPage);
